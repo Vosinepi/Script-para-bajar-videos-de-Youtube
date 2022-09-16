@@ -1,11 +1,13 @@
+from tkinter import *
+
 import pytube  # importa la libreria pytube
 from pytube.cli import on_progress  # importa la barra de progreso de pytube
 
 
-location = "./"  # directorio de descarga. En este caso es el directorio actual
+ubicacion = "./"  # directorio de descarga. En este caso es el directorio actual
 
 
-def download_video(url, filename=None):
+def download_video(url, location=None):
     """
     Descarga el video de la URL dada y lo guarda en la ubicación especificada en la variable de
     ubicación
@@ -13,7 +15,7 @@ def download_video(url, filename=None):
     :param url: La URL del video que desea descargar
     :param filename: El nombre del archivo a descargar (no utilizado en esta version)
     """
-
+    print(f"carpeta_video: {location}")
     try:
         video_instance = pytube.YouTube(
             url, on_progress_callback=on_progress
@@ -39,6 +41,8 @@ def download_video(url, filename=None):
 
 
 if __name__ == "__main__":
+    print("Descargando videos de YouTube")
+    print("El video se descargará en el directorio actual donde se aloja este script")
     video_url = input("Ingrese la url del video: ")  # solicita la url del video
     # Nombre_video = input("Ingrese el nombre del video(opcional): ")
     download_video(video_url)  # llama a la función de descarga de video
