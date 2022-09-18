@@ -11,7 +11,7 @@ carpeta_video = ""
 
 # ==========> FUNCIONES
 
-# ----------- Descarga de video -------------
+# ----------- Descarga de video ------------
 
 
 def bajar_twitter(url_video, carpeta_video):
