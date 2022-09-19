@@ -18,3 +18,9 @@
 ## Para usar las app´s:
 
 Dentro de la carpeta dist esta el archivo ejecutable para windows. Para usarlo solo hay que ejecutarlo y pegar la url del video que se quiere descargar y seleccionar la carpeta de destino.
+
+## Contacto
+
+- [Linkedin](https://www.linkedin.com/in/iber-ismael-piovani-8b35bbba/)
+- [Twitter](https://twitter.com/laimas)
+- [Github](https://github.com/Vosinepi)

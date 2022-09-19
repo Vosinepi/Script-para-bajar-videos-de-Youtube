@@ -36,7 +36,11 @@ def bajar_twitter(url_video, carpeta_video):
             ydl_ops = {"paths": {"home": carpeta_video}}
             with yt_dlp.YoutubeDL(ydl_ops) as ydl:
                 ydl.download(url_video)
-
+            video_descargado_label = Label(
+                frame_textos, text=f"Video descargado con exito!!", pady=10
+            )
+            video_descargado_label.config(bg="#0D1117", fg="#C9D1CC")
+            video_descargado_label.pack()
         except Exception as e:
             print("error de descarga del video: " + str(url_video))
             print(e)
